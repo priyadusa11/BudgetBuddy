@@ -1,0 +1,9 @@
+/* src/styles/Dashboard.css */
+.dashboard-content {
+  margin-left: 60px; /* default collapsed sidebar width */
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+.sidebar-expanded ~ .dashboard-content {
+  margin-left: 200px; /* expanded sidebar */
+}

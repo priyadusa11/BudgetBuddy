@@ -1,0 +1,91 @@
+/* Overall container styling */
+.overview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem; /* ⬅️ real visible space between cards */
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f3, #d9e2ec);
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Card base style */
+.card {
+  background: #fff;
+  padding: 2rem 2rem;
+  border-radius: 26px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+  width: 320px; /* ⬅️ fixed width to make the gap visible */
+  margin: 0; /* removed auto margin that was closing the gap */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Headings inside cards */
+.card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2b2d42;
+  margin-bottom: 0.6rem;
+}
+
+/* Description text */
+.card p {
+  font-size: 1.05rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Card color themes */
+.card.blue {
+  border-top: 6px solid #007bff;
+}
+
+.card.green {
+  border-top: 6px solid #28a745;
+}
+
+.card.red {
+  border-top: 6px solid #dc3545;
+}
+
+/* Subtle gradient on hover per type */
+.card.blue:hover {
+  background: linear-gradient(145deg, #e0f0ff, #ffffff);
+}
+
+.card.green:hover {
+  background: linear-gradient(145deg, #e9fce7, #ffffff);
+}
+
+.card.red:hover {
+  background: linear-gradient(145deg, #fdeaea, #ffffff);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .overview-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* ✅ still keeps gap on mobile */
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .card h3 {
+    font-size: 1.1rem;
+  }
+}

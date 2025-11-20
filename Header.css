@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8312a5;
+  color: rgb(190, 133, 133);
+  padding: 15px 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between logo and text */
+}
+
+.logo-img {
+  width: 60px;   /* reduce size */
+  height: 60px;  /* keep proportional */
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f3eeee;
+}
+
+/* 🔹 Navigation links */
+.nav a {
+  margin: 0 12px;
+  color: rgb(211, 55, 55);
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+/* 🔹 Hover for normal links */
+.nav a:hover {
+  background: #005fa3;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 🔹 Special button styles (Login, Signup) */
+.nav .btn {
+  background: white;
+  color: #0077cc;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* 🔹 Hover for buttons */
+.nav .btn:hover {
+  background: #7ac0e0;
+  color: black;
+  border: 2px solid #005fa3;
+  transform: scale(1.1); /* Bigger hover effect */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}

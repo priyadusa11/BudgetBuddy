@@ -1,0 +1,34 @@
+.sidebar {
+  width: 60px;
+  background: #2c3e50;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.sidebar-item:hover {
+  background: #34495e;
+}
+
+.sidebar-item span {
+  margin-left: 10px;
+}

@@ -1,0 +1,62 @@
+.main-container {
+  display: flex;
+}
+
+.content-container {
+  flex: 1;
+  padding: 2rem;
+  background: #f9fafc;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.subtitle {
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+
+.summary-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.blue { background-color: #3b82f6; }
+.red { background-color: #ef4444; }
+.green { background-color: #22c55e; }
+.yellow { background-color: #eab308; }
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.chart-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.insights {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #333;
+}
