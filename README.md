@@ -21,3 +21,10 @@ Handles cleaning, encoding, and scaling of expense data to improve model accurac
 
 ⚡ Instant prediction and feedback
 Shows the recommended lifestyle category in real time to support better financial decision-making.
+
+# 🧩 Libraries and Dependencies
+Library / Package	Purpose / Description
+pandas	Data cleaning, preprocessing, and handling expense datasets
+numpy	Numerical operations and array manipulation
+scikit-learn	ML model training (Random Forest/Gradient Boosting), encoding, scaling, and evaluation
+matplotlib / seaborn	Visualization of spending trends, correlation graphs, and insights
